@@ -1,0 +1,41 @@
+<head><title>test</title></head>
+<body>
+    <br/>
+    <br/>
+    <br/>
+    <br/>
+    <br/>
+    <br/>
+    <br/>
+    <style>
+        button ::after{
+        border: none;
+        }
+        </style>
+<center>
+<img src="earth.png" height=512 width=512  id="earth" alt="earth"/>	
+</center>
+
+
+    <img src="" id="tp">
+    <script type="text/javascript">
+        
+        document.getElementById('earth').addEventListener('click', function() {
+            document.getElementById('earth').style.marginTop = "-100px";
+
+            document.getElementById('earth').style.height =712;
+            document.getElementById('earth').style.width=712;
+            
+            
+            setTimeout(function(){
+                document.getElementById('earth').style.height = 512;
+            document.getElementById('earth').style.width=512;
+            document.getElementById("tp").src="https://badges.toozhao.com/badges/01JEBCTEZ752JFAX01H0GY4XV9/green.svg"+ '?t=' + new Date().getTime();
+            document.getElementById('earth').style.marginTop = "0px";
+            document.getElementById('earth').style.marginLeft = "0px"; 
+        }, 500);
+        });
+
+
+    </script>
+</body>
